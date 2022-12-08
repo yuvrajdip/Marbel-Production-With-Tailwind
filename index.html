@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ! google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- ! page title -->
+  <title>Tailwind Responsiveness</title>
+
+  <!-- ! tailwind cdn link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ! tailwind config script -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            yellow: '#FECC02'
+          },
+          fontFamily : {
+            bebas : ['Bebas Neue', 'cursive'],
+            montserrat : ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+</head>
+<body>
+  <!-- <h2 class="text-yellow bg-slate-800 text-3xl font-bebas">Tail Wind</h2> -->
+  
+  <!-- ! navbar -->
+  <nav class="flex justify-between sm:px-14 md:px-28 lg:px-52 items-center shadow-lg h-16 font-bebas fixed w-full  bg-white">
+    
+    <h1 style="font-style:italic;" class="font-bold text-3xl">MARBEL STUDIO</h1>
+    
+    <ul class="flex gap-3 text-yellow-300">
+      <li class="font-semibold text-lg"><a href="#">About Us</a></li>
+      <li class="font-semibold text-lg text-red-500"><a href="#">Our Movies</a></li>
+      <li class="font-semibold text-lg"><a href="#">Services</a></li>
+    </ul>
+  </nav>
+
+  <!-- ! main section -->
+  <main>
+    <!-- ! banner section -->
+    <section class="bg-red-500 h-screen pt-16 flex justify-start items-center bg-[url('./images/banner.jpg')] bg-cover">
+      <div class="ml-20 font-bebas">
+        <p class="uppercase">Movie Production Studio</p>
+        <h2 class="text-5xl uppercase">Films Made to</h2>
+        <h2 style="color:orange;" class="text-5xl uppercase">Production</h2>
+        <p class="font-montserrat text-white">Lorem ipsum dolor sit amet consectetur adipisicing<br> Soluta magnam ullam maxime ab quibusdam dolore, eaque saepe iusto.</p>
+
+        <button class="mt-5 text-xl text-white hover:bg-yellow hover:text-black hover:border-yellow transition delay-75 ease-in-out border-2 p-2 font-bebas">DISCOVER MORE</button>
+      </div>
+    </section>
+
+    
+    <!-- ! about us section -->
+    <section class="m-20 p-14 border-2 border-sky-700">
+      
+      <div class="lg:flex">
+
+        <!-- !image -->
+        <div class="lg:w-2/4 h-80 bg-[url('./images/camera-man.jpg')] bg-center bg-cover flex justify-center items-end">
+          <h2 class="bg-amber-200 text-xl font-bebas font-semibold text-black shadow-lg shadow-slate-500 rounded-t-sm p-5 -mb-6">23 Years of Experience</h2>
+        </div>
+
+        <div class="sm:mt-14 lg:mt-0 lg:ml-7 lg:w-2/4 font-bebas">
+          <p class="text-left font-medium text-2xl">About Us</p>
+          <h2 class="font-semibold text-6xl">Filming Experience Just Got Better</h2>
+          <p class="text-justify font-montserrat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quos! Laboriosam facere porro harum reiciendis sequi quam officia, aliquam ipsa eligendi doloremque. Laudantium at distinctio unde vel sapiente iusto nemo.</p>
+
+          <button class="block ml-auto mt-5 text-xl text-black hover:bg-yellow hover:text-black hover:border-yellow transition delay-75 ease-in-out border-2 border-black p-2 font-bebas">DISCOVER MORE</button>
+        </div>
+      </div>
+
+      <!-- ! our vision , our mision , our goal -->
+      <div class="lg:flex mt-14 gap-10">
+        <div class="border-t-4 border-black">
+          <h2 class="mt-5 text-4xl font-bold uppercase font-bebas">Our Vision</h2>
+          <p class="my-5 font-montserrat text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque delectus dolor expedita vitae laudantium inventore cum, asperiores reiciendis quae similique! Iusto necessitatibus corrupti vitae iure natus esse optio a?</p>
+        </div>
+        <div class="border-t-4 border-black">
+          <h2 class="mt-5 text-4xl font-bold uppercase font-bebas">Our Mision</h2>
+          <p class="my-5 font-montserrat text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque delectus dolor expedita vitae laudantium inventore cum, asperiores reiciendis quae similique! Iusto necessitatibus corrupti vitae iure natus esse optio a?</p>
+        </div>
+        <div class="border-t-4 border-black">
+          <h2 class="mt-5 text-4xl font-bold uppercase font-bebas">Our Goal</h2>
+          <p class="my-5 font-montserrat text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque delectus dolor expedita vitae laudantium inventore cum, asperiores reiciendis quae similique! Iusto necessitatibus corrupti vitae iure natus esse optio a?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- todo MOVIE Section -->
+    <section class="h-auto bg-gray-600 p-14">
+      <h2 class="text-black font-bebas text-xl">Our Movies</h2>
+
+      <!-- todo flex section -->
+      <div class="flex h-14 justify-between items-center">
+        <h2 class="text-5xl text-black font-bebas">Movie Collection</h2>
+        
+        <button class="bg-white text-xl text-black hover:bg-yellow hover:text-black hover:border-yellow transition delay-75 ease-in-out border-2 border-black uppercase p-2 font-bebas">See More Movies</button>
+      </div>
+
+      <!-- todo grid section -->
+      <div class="mt-5 grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="border-white border-2 h-96 bg-[url('./images/interstellar.jpg')] bg-cover sm:bg-center"></div>
+        <div class="border-white border-2 h-96 bg-[url('./images/inception.jpg')] bg-cover sm:bg-center"></div>
+        <div class="border-white border-2 h-96 bg-[url('./images/fractured.jpg')] bg-cover sm:bg-center"></div>
+        <div class="border-white border-2 h-96 bg-[url('./images/tenet.jpg')] bg-cover sm:bg-center"></div>
+      </div>
+    </section>
+
+    <!-- todo What we offer -->
+    <section class="h-auto text-center p-8">
+      <p class="font-bebas text-xl">SURVICES</p>
+      <h2 class="uppercase font-bebas text-3xl text-black font-medium">What we offer</h2>
+
+      <div class="mt-5 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="h-auto border-2 border-black p-5 text-center">
+          <img src="./images/icons/1.png" alt="" class="mx-auto" height="80px" width="80px">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, dignissimos.</p>
+        </div>
+        <div class="h-auto border-2 border-black p-5 text-center">
+          <img src="./images/icons/2.png" alt="" class="mx-auto" height="80px" width="80px">
+          <p>Magni beatae culpa harum? Fugit nihil dolorem delectus odio veritatis!</p>
+        </div>
+        <div class="h-auto border-2 border-black p-5 text-center">
+          <img src="./images/icons/3.png" alt="" class="mx-auto" height="80px" width="80px">
+          <p>Exercitationem, officiis itaque voluptatem molestias neque cum facere et libero.</p>
+        </div>
+        <div class="h-auto border-2 border-black p-5 text-center">
+          <img src="./images/icons/4.png" alt="" class="mx-auto" height="80px" width="80px">
+          <p>Nemo omnis sapiente, voluptatem est pariatur amet beatae veniam voluptatum!</p>
+        </div>
+        <div class="h-auto border-2 border-black p-5 text-center">
+          <img src="./images/icons/5.png" alt="" class="mx-auto" height="80px" width="80px">
+          <p>Vitae cumque dicta ut totam culpa eligendi fuga! Quae, sapiente.</p>
+        </div>
+        <div class="h-auto border-2 border-black p-5 text-center">
+          <img src="./images/icons/6.png" alt="" class="mx-auto" height="80px" width="80px">
+          <p>Similique numquam quas, facere illum consectetur alias voluptas deserunt esse.</p>
+        </div>
+        <div class="h-auto border-2 border-black p-5 text-center">
+          <img src="./images/icons/7.png" alt="" class="mx-auto" height="80px" width="80px">
+          <p>Voluptates iusto quam rem aperiam similique suscipit, recusandae fugiat distinctio.</p>
+        </div>
+        <div class="h-auto border-2 border-black p-5 text-center">
+          <img src="./images/icons/8.png" alt="" class="mx-auto" height="80px" width="80px">
+          <p>Deserunt mollitia maxime esse iusto. Placeat dolore provident ipsam excepturi!</p>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- todo footer -->
+  <footer class="h-72 bg-[url('./images/footer-bg.jpg')] bg-center bg-cover text-white flex flex-col items-center justify-center gap-3">
+    <h2 class="uppercase text-5xl font-bebas">Marbel Production</h2>
+    <p class="uppercase text-2xl font-bebas">Next Level Experience</p>
+    <p class="text-sm font-montserrat text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sunt veritatis modi amet saepe quisquam dignissimos quaerat laudantium consectetur, doloremque</p>
+    <p class="mt-7 font-montserrat text-center">&copy;2022 Marbel Production.All Rights Reserved. Presented by Deba Dip Bhowmik</p>
+  </footer>
+</body>
+</html>
