@@ -11,6 +11,8 @@
   <!-- ! page title -->
   <title>Tailwind Responsiveness</title>
 
+  <link rel="stylesheet" href="./index.css">
+
   <!-- ! tailwind cdn link -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -37,14 +39,14 @@
   <!-- <h2 class="text-yellow bg-slate-800 text-3xl font-bebas">Tail Wind</h2> -->
   
   <!-- ! navbar -->
-  <nav class="flex justify-between sm:px-14 md:px-28 lg:px-52 items-center shadow-lg h-16 font-bebas fixed w-full  bg-white">
+  <nav class="flex justify-between sm:px-14 md:px-28 lg:px-52 items-center shadow-lg h-20 font-bebas fixed w-full  bg-white">
     
-    <h1 style="font-style:italic;" class="font-bold text-3xl">MARBEL STUDIO</h1>
+    <h1 style="font-style:italic;" class="logo-title">MARBEL STUDIO</h1>
     
-    <ul class="flex gap-3 text-yellow-300">
-      <li class="font-semibold text-lg"><a href="#">About Us</a></li>
-      <li class="font-semibold text-lg text-red-500"><a href="#">Our Movies</a></li>
-      <li class="font-semibold text-lg"><a href="#">Services</a></li>
+    <ul class="flex gap-5 text-yellow-300">
+      <li class="font-semibold text-xl"><a href="#about-us">About Us</a></li>
+      <li class="font-semibold text-xl text-red-500"><a href="#movies">Our Movies</a></li>
+      <li class="font-semibold text-xl"><a href="#services">Services</a></li>
     </ul>
   </nav>
 
@@ -64,7 +66,7 @@
 
     
     <!-- ! about us section -->
-    <section class="m-20 p-14 border-2 border-sky-700">
+    <section class="m-20 p-14 border-2 border-sky-700" id="about-us">
       
       <div class="lg:flex">
 
@@ -100,7 +102,7 @@
     </section>
 
     <!-- todo MOVIE Section -->
-    <section class="h-auto bg-gray-600 p-14">
+    <section class="h-auto bg-gray-600 p-14" id="movies">
       <h2 class="text-black font-bebas text-xl">Our Movies</h2>
 
       <!-- todo flex section -->
@@ -119,9 +121,9 @@
       </div>
     </section>
 
-    <!-- todo What we offer -->
-    <section class="h-auto text-center p-8">
-      <p class="font-bebas text-xl">SURVICES</p>
+    <!-- todo What we offer / SERVICES Section -->
+    <section class="h-auto text-center p-8" id="services">
+      <p class="font-bebas text-xl">SERVICES</p>
       <h2 class="uppercase font-bebas text-3xl text-black font-medium">What we offer</h2>
 
       <div class="mt-5 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
