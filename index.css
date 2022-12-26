@@ -9,7 +9,7 @@
   white-space: nowrap;
   /* margin: 0 auto; */
   letter-spacing: .4rem;
-  animation: demo-typewriter 3s steps(30, end), demo-cursor 1s step-end infinite;
+  animation: demo-typewriter 10s steps(50, end), demo-cursor 1s step-end infinite;
 }
 
 @keyframes demo-typewriter {
